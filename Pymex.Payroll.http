@@ -1,0 +1,6 @@
+@Pymex.Payroll_HostAddress = http://localhost:5167
+
+GET {{Pymex.Payroll_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

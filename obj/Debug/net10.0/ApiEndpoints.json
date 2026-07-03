@@ -1,0 +1,1506 @@
+[
+  {
+    "ContainingType": "Pymex.Auth.Controllers.AccessController",
+    "Method": "InsertNewUser",
+    "RelativePath": "api/Access/InsertNewUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Pymex.Auth.Models.Users",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Auth.Controllers.AccessController",
+    "Method": "RefreshTokenAsync",
+    "RelativePath": "api/Access/RefreshToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Pymex.Auth.Models.Dtos.RefreshTokenRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Auth.Controllers.AccessController",
+    "Method": "UpdatePasswordUser",
+    "RelativePath": "api/Access/UpdatePasswordUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "newPassword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Auth.Controllers.AccessController",
+    "Method": "ValidateLoginAsync",
+    "RelativePath": "api/Access/ValidateLogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Pymex.Auth.Models.Dtos.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.CoinQuotationsController",
+    "Method": "Delete",
+    "RelativePath": "api/CoinQuotations/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.CoinQuotationsController",
+    "Method": "GetById",
+    "RelativePath": "api/CoinQuotations/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.CoinQuotationsController",
+    "Method": "GetList",
+    "RelativePath": "api/CoinQuotations/GetList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "coinId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.CoinQuotationsController",
+    "Method": "ImportBCVExcelHistoricalRates",
+    "RelativePath": "api/CoinQuotations/ImportBCVExcelHistoricalRates",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.CoinQuotationsController",
+    "Method": "Insert",
+    "RelativePath": "api/CoinQuotations/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quotation",
+        "Type": "Pymex.Payroll.Data.Dtos.CoinQuotationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.CoinQuotationsController",
+    "Method": "InsertList",
+    "RelativePath": "api/CoinQuotations/InsertList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quotations",
+        "Type": "System.Collections.Generic.List\u00601[[Pymex.Payroll.Data.Dtos.CoinQuotationDto, Pymex.Payroll, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.CoinQuotationsController",
+    "Method": "Update",
+    "RelativePath": "api/CoinQuotations/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quotation",
+        "Type": "Pymex.Payroll.Data.Dtos.CoinQuotationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.CoinQuotationsController",
+    "Method": "UpdateBCVCoinQuotationListScraper",
+    "RelativePath": "api/CoinQuotations/UpdateBCVCoinQuotationListScraper",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.CoinQuotationsController",
+    "Method": "UpdateList",
+    "RelativePath": "api/CoinQuotations/UpdateList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quotations",
+        "Type": "System.Collections.Generic.List\u00601[[Pymex.Payroll.Data.Dtos.CoinQuotationDto, Pymex.Payroll, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.CoinsController",
+    "Method": "Delete",
+    "RelativePath": "api/Coins/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.CoinsController",
+    "Method": "GetById",
+    "RelativePath": "api/Coins/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.CoinsController",
+    "Method": "GetList",
+    "RelativePath": "api/Coins/GetList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.CoinsController",
+    "Method": "GetNavBarById",
+    "RelativePath": "api/Coins/GetNavBarById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "navPositionId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "idReference",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.CoinsController",
+    "Method": "Insert",
+    "RelativePath": "api/Coins/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "coin",
+        "Type": "Pymex.Payroll.Data.Dtos.CoinsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.CoinsController",
+    "Method": "Update",
+    "RelativePath": "api/Coins/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "coin",
+        "Type": "Pymex.Payroll.Data.Dtos.CoinsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.ContractConceptsController",
+    "Method": "Delete",
+    "RelativePath": "api/ContractConcepts/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.ContractConceptsController",
+    "Method": "GetByContractId",
+    "RelativePath": "api/ContractConcepts/GetByContractId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contractId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.ContractConceptsController",
+    "Method": "GetById",
+    "RelativePath": "api/ContractConcepts/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.ContractConceptsController",
+    "Method": "GetNavBarById",
+    "RelativePath": "api/ContractConcepts/GetNavBarById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "navPositionId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "idReference",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.ContractConceptsController",
+    "Method": "Insert",
+    "RelativePath": "api/ContractConcepts/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contractConcept",
+        "Type": "Pymex.Payroll.Data.Dtos.ContractConceptDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.ContractConceptsController",
+    "Method": "Update",
+    "RelativePath": "api/ContractConcepts/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contractConcept",
+        "Type": "Pymex.Payroll.Data.Dtos.ContractConceptDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.ContractsController",
+    "Method": "Delete",
+    "RelativePath": "api/Contracts/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.ContractsController",
+    "Method": "GetById",
+    "RelativePath": "api/Contracts/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.ContractsController",
+    "Method": "GetList",
+    "RelativePath": "api/Contracts/GetList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.ContractsController",
+    "Method": "GetNavBarById",
+    "RelativePath": "api/Contracts/GetNavBarById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "navPositionId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "idReference",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.ContractsController",
+    "Method": "Insert",
+    "RelativePath": "api/Contracts/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contract",
+        "Type": "Pymex.Payroll.Data.Dtos.ContractDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.ContractsController",
+    "Method": "Update",
+    "RelativePath": "api/Contracts/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contract",
+        "Type": "Pymex.Payroll.Data.Dtos.ContractDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.ContractVariablesController",
+    "Method": "Delete",
+    "RelativePath": "api/ContractVariables/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.ContractVariablesController",
+    "Method": "GetByContractId",
+    "RelativePath": "api/ContractVariables/GetByContractId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contractId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.ContractVariablesController",
+    "Method": "GetById",
+    "RelativePath": "api/ContractVariables/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.ContractVariablesController",
+    "Method": "GetNavBarById",
+    "RelativePath": "api/ContractVariables/GetNavBarById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "navPositionId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "idReference",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.ContractVariablesController",
+    "Method": "Insert",
+    "RelativePath": "api/ContractVariables/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contractVariable",
+        "Type": "Pymex.Payroll.Data.Dtos.ContractVariableDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.ContractVariablesController",
+    "Method": "Update",
+    "RelativePath": "api/ContractVariables/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contractVariable",
+        "Type": "Pymex.Payroll.Data.Dtos.ContractVariableDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.DepartmentsController",
+    "Method": "Delete",
+    "RelativePath": "api/Departments/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.DepartmentsController",
+    "Method": "GetById",
+    "RelativePath": "api/Departments/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.DepartmentsController",
+    "Method": "GetList",
+    "RelativePath": "api/Departments/GetList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.DepartmentsController",
+    "Method": "GetNavBarById",
+    "RelativePath": "api/Departments/GetNavBarById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "navPositionId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "idReference",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.DepartmentsController",
+    "Method": "Insert",
+    "RelativePath": "api/Departments/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "department",
+        "Type": "Pymex.Payroll.Data.Dtos.DepartmentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.DepartmentsController",
+    "Method": "Update",
+    "RelativePath": "api/Departments/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "department",
+        "Type": "Pymex.Payroll.Data.Dtos.DepartmentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.EmployeesController",
+    "Method": "Delete",
+    "RelativePath": "api/Employees/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.EmployeesController",
+    "Method": "GetByCode",
+    "RelativePath": "api/Employees/GetByCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "code",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.EmployeesController",
+    "Method": "GetByDepartmentId",
+    "RelativePath": "api/Employees/GetByDepartmentId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departmentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.EmployeesController",
+    "Method": "GetById",
+    "RelativePath": "api/Employees/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.EmployeesController",
+    "Method": "GetList",
+    "RelativePath": "api/Employees/GetList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.EmployeesController",
+    "Method": "GetNavBarById",
+    "RelativePath": "api/Employees/GetNavBarById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "navPositionId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "idReference",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.EmployeesController",
+    "Method": "Insert",
+    "RelativePath": "api/Employees/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employee",
+        "Type": "Pymex.Payroll.Data.Dtos.EmployeeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.EmployeesController",
+    "Method": "Update",
+    "RelativePath": "api/Employees/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employee",
+        "Type": "Pymex.Payroll.Data.Dtos.EmployeeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Auth.Controllers.EnterprisesController",
+    "Method": "ValidateLoginAsync",
+    "RelativePath": "api/Enterprises/GetEnterpriseById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Auth.Controllers.EnterprisesController",
+    "Method": "GetEnterprisesByUserAndModule",
+    "RelativePath": "api/Enterprises/GetEnterprisesByUserAndModule",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "moduleId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollCalculationController",
+    "Method": "CalculateAllPayroll",
+    "RelativePath": "api/PayrollCalculation/CalculateAllPayroll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollCalculationController",
+    "Method": "CalculateEmployeePayroll",
+    "RelativePath": "api/PayrollCalculation/CalculateEmployeePayroll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollCalculationController",
+    "Method": "ClosePayroll",
+    "RelativePath": "api/PayrollCalculation/ClosePayroll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollConceptsController",
+    "Method": "Delete",
+    "RelativePath": "api/PayrollConcepts/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollConceptsController",
+    "Method": "GetById",
+    "RelativePath": "api/PayrollConcepts/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollConceptsController",
+    "Method": "GetList",
+    "RelativePath": "api/PayrollConcepts/GetList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollConceptsController",
+    "Method": "GetNavBarById",
+    "RelativePath": "api/PayrollConcepts/GetNavBarById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "navPositionId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "idReference",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollConceptsController",
+    "Method": "Insert",
+    "RelativePath": "api/PayrollConcepts/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payrollConcept",
+        "Type": "Pymex.Payroll.Data.Dtos.PayrollConceptDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollConceptsController",
+    "Method": "Update",
+    "RelativePath": "api/PayrollConcepts/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payrollConcept",
+        "Type": "Pymex.Payroll.Data.Dtos.PayrollConceptDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollNoveltiesController",
+    "Method": "Delete",
+    "RelativePath": "api/PayrollNovelties/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollNoveltiesController",
+    "Method": "GetByContractId",
+    "RelativePath": "api/PayrollNovelties/GetByContractId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contractId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollNoveltiesController",
+    "Method": "GetById",
+    "RelativePath": "api/PayrollNovelties/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollNoveltiesController",
+    "Method": "GetNavBarById",
+    "RelativePath": "api/PayrollNovelties/GetNavBarById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "navPositionId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "idReference",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollNoveltiesController",
+    "Method": "Insert",
+    "RelativePath": "api/PayrollNovelties/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payrollNovelty",
+        "Type": "Pymex.Payroll.Data.Dtos.PayrollNoveltyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollNoveltiesController",
+    "Method": "Update",
+    "RelativePath": "api/PayrollNovelties/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payrollNovelty",
+        "Type": "Pymex.Payroll.Data.Dtos.PayrollNoveltyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollVariablesController",
+    "Method": "Delete",
+    "RelativePath": "api/PayrollVariables/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollVariablesController",
+    "Method": "GetById",
+    "RelativePath": "api/PayrollVariables/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollVariablesController",
+    "Method": "GetList",
+    "RelativePath": "api/PayrollVariables/GetList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollVariablesController",
+    "Method": "GetNavBarById",
+    "RelativePath": "api/PayrollVariables/GetNavBarById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "navPositionId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "idReference",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollVariablesController",
+    "Method": "Insert",
+    "RelativePath": "api/PayrollVariables/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payrollVariable",
+        "Type": "Pymex.Payroll.Data.Dtos.PayrollVariableDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PayrollVariablesController",
+    "Method": "Update",
+    "RelativePath": "api/PayrollVariables/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payrollVariable",
+        "Type": "Pymex.Payroll.Data.Dtos.PayrollVariableDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Auth.Controllers.PermissionsController",
+    "Method": "CheckPermission",
+    "RelativePath": "api/Permissions/CheckPermission",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "moduleCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Auth.Controllers.PermissionsController",
+    "Method": "CheckPermissionWithDetails",
+    "RelativePath": "api/Permissions/CheckPermissionWithDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "moduleCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Auth.Controllers.PermissionsController",
+    "Method": "GetAllowedModules",
+    "RelativePath": "api/Permissions/GetAllowedModules",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Auth.Controllers.PermissionsController",
+    "Method": "GetUserSubscription",
+    "RelativePath": "api/Permissions/GetUserSubscription",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "moduleId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Auth.Controllers.PermissionsController",
+    "Method": "RemoveUserSubscription",
+    "RelativePath": "api/Permissions/RemoveUserSubscription",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "moduleId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Auth.Controllers.PermissionsController",
+    "Method": "SetRolePermission",
+    "RelativePath": "api/Permissions/SetRolePermission",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Pymex.Auth.Controllers.RolePermissionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Auth.Controllers.PermissionsController",
+    "Method": "SetUserPermission",
+    "RelativePath": "api/Permissions/SetUserPermission",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Pymex.Auth.Controllers.UserPermissionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Auth.Controllers.PermissionsController",
+    "Method": "SetUserSubscription",
+    "RelativePath": "api/Permissions/SetUserSubscription",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Pymex.Auth.Controllers.UserSubscriptionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PositionsController",
+    "Method": "Delete",
+    "RelativePath": "api/Positions/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PositionsController",
+    "Method": "GetById",
+    "RelativePath": "api/Positions/GetById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PositionsController",
+    "Method": "GetList",
+    "RelativePath": "api/Positions/GetList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PositionsController",
+    "Method": "GetNavBarById",
+    "RelativePath": "api/Positions/GetNavBarById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "navPositionId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "idReference",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PositionsController",
+    "Method": "Insert",
+    "RelativePath": "api/Positions/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "position",
+        "Type": "Pymex.Payroll.Data.Dtos.PositionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Payroll.Controllers.PositionsController",
+    "Method": "Update",
+    "RelativePath": "api/Positions/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "position",
+        "Type": "Pymex.Payroll.Data.Dtos.PositionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Pymex.Auth.Controllers.SystemInfoController",
+    "Method": "GetSystemInfo",
+    "RelativePath": "api/SystemInfo/GetSystemInfo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
