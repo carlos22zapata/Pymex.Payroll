@@ -26,6 +26,7 @@ namespace Pymex.Payroll.Data.Contexts
         public DbSet<Setting> Settings { get; set; }
         public DbSet<Coins> Coins { get; set; }
         public DbSet<CoinQuotations> CoinQuotations { get; set; }
+        public DbSet<RelatedContract> RelatedContracts { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

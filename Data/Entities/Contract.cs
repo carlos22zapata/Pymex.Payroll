@@ -10,5 +10,6 @@
         // Colecciones de navegación
         public ICollection<ContractConcept> ContractConcepts { get; set; } = new List<ContractConcept>();
         public ICollection<ContractVariable> ContractVariables { get; set; } = new List<ContractVariable>();
+        public ICollection<RelatedContract> RelatedContracts { get; set; } = new List<RelatedContract>();
     }
 }

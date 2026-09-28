@@ -68,6 +68,14 @@ namespace Pymex.Payroll.Mappers
                 .ForMember(dest => dest.CoinSymbol, opt => opt.MapFrom(src => src.Coin!.Symbol))
                 .ReverseMap()
                 .ForMember(dest => dest.Coin, opt => opt.Ignore());
+
+            CreateMap<RelatedContract, RelatedContractDto>()
+                .ForMember(dest => dest.ContractName, opt => opt.MapFrom(src => src.Contract.Name))
+                .ForMember(dest => dest.RelatedContractName, opt => opt.MapFrom(src => src.RelatedContractRef.Name));
+
+            CreateMap<RelatedContractDto, RelatedContract>()
+                .ForMember(dest => dest.Contract, opt => opt.Ignore())
+                .ForMember(dest => dest.RelatedContractRef, opt => opt.Ignore());
         }
     }
 }

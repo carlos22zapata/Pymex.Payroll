@@ -222,6 +222,7 @@ builder.Services.AddScoped<IPayrollNoveltyRepository, PayrollNoveltyRepository>(
 builder.Services.AddScoped<IPayrollCalculationRepository, PayrollCalculationRepository>();
 builder.Services.AddScoped<ICoinsRepository, CoinsRepository>();
 builder.Services.AddScoped<ICoinQuotationRepository, CoinQuotationRepository>();
+builder.Services.AddScoped<IRelatedContractRepository, RelatedContractRepository>();
 
 // Service registrations
 builder.Services.AddScoped<IDepartmentService, DepartmentService>();
@@ -236,6 +237,7 @@ builder.Services.AddScoped<IPayrollNoveltyService, PayrollNoveltyService>();
 builder.Services.AddScoped<IPayrollCalculationService, PayrollCalculationService>();
 builder.Services.AddScoped<ICoinsService, CoinsService>();
 builder.Services.AddScoped<ICoinQuotationService, CoinQuotationService>();
+builder.Services.AddScoped<IRelatedContractService, RelatedContractService>();
 
 var app = builder.Build();
 
