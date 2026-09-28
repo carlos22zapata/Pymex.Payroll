@@ -121,9 +121,23 @@ namespace Pymex.Payroll.Infrastructure
                 await context.SaveChangesAsync();
             }
 
+            if (!context.Coins.Any())
+            {
+                context.Coins.Add(new Coins { Enabled = true, Name = "Bolivares", Symbol = "VES" });
+                context.Coins.Add(new Coins { Enabled = true, Name = "Dólares", Symbol = "USD" });
+                await context.SaveChangesAsync();
+            }
+
+            if (!context.CoinQuotations.Any())
+            {
+                var coinId = context.Coins.Select(s => s.Id).FirstOrDefault();
+                context.CoinQuotations.Add(new CoinQuotations { Date = DateTime.Now, Observation = "", Value = 1, CoinId = coinId, Origin = 0 });
+                await context.SaveChangesAsync();
+            }
+
             if (!context.PayrollVariables.Any())
             {
-                context.PayrollVariables.AddRange(new List<PayrollVariable>
+                var payrollVariables = new List<PayrollVariable>
                 {
                     // --- Variables Base y de Clasificación ---
                     new PayrollVariable { Code = "V_SUELDO_BASE", Name = "Sueldo Mensual Base", DataType = VariableDataType.Numeric, Behavior = PersistenceBehavior.Fixed },
@@ -159,7 +173,13 @@ namespace Pymex.Payroll.Infrastructure
                     new PayrollVariable { Code = "V_SAL_INT", Name = "Salario Integral Actual", DataType = VariableDataType.Numeric, Behavior = PersistenceBehavior.Calculated },
                     new PayrollVariable { Code = "V_ALIC_UTIL", Name = "Alícuota de Utilidades", DataType = VariableDataType.Numeric, Behavior = PersistenceBehavior.Calculated },
                     new PayrollVariable { Code = "V_ALIC_BV", Name = "Alícuota de Bono Vacacional", DataType = VariableDataType.Numeric, Behavior = PersistenceBehavior.Calculated }
-                });
+                };
+                var defaultCoinId = context.Coins.Select(c => c.Id).First();
+                foreach (var variable in payrollVariables)
+                {
+                    variable.CoinId = defaultCoinId;
+                }
+                context.PayrollVariables.AddRange(payrollVariables);
                 await context.SaveChangesAsync();
             }
 
@@ -170,20 +190,6 @@ namespace Pymex.Payroll.Infrastructure
                     new Contract { Name = "Contrato Quincenal", Description = "Contrato quincenal LOTTT", IsActive = true },
                     new Contract { Name = "Contrato Mensual", Description = "Contrato mensual LOTTT", IsActive = true }
                 });
-                await context.SaveChangesAsync();
-            }
-
-            if (!context.Coins.Any())
-            {
-                context.Coins.Add(new Coins { Enabled = true, Name = "Bolivares", Symbol = "VES" });
-                context.Coins.Add(new Coins { Enabled = true, Name = "Dólares", Symbol = "USD" });
-                await context.SaveChangesAsync();
-            }
-
-            if (!context.CoinQuotations.Any())
-            {
-                var coinId = context.Coins.Select(s => s.Id).FirstOrDefault();
-                context.CoinQuotations.Add(new CoinQuotations { Date = DateTime.Now, Observation = "", Value = 1, CoinId = coinId, Origin = 0 });
                 await context.SaveChangesAsync();
             }
 
