@@ -3,6 +3,7 @@ using Pymex.Auth.Data;
 using Pymex.Payroll.Data.Contexts;
 using Pymex.Payroll.Data.Entities;
 using Pymex.Payroll.Data.Enums;
+using Pymex.Shared.Time;
 
 namespace Pymex.Payroll.Infrastructure
 {
@@ -131,7 +132,7 @@ namespace Pymex.Payroll.Infrastructure
             if (!context.CoinQuotations.Any())
             {
                 var coinId = context.Coins.Select(s => s.Id).FirstOrDefault();
-                context.CoinQuotations.Add(new CoinQuotations { Date = DateTime.Now, Observation = "", Value = 1, CoinId = coinId, Origin = 0 });
+                context.CoinQuotations.Add(new CoinQuotations { Date = AppClock.Now, Observation = "", Value = 1, CoinId = coinId, Origin = 0 });
                 await context.SaveChangesAsync();
             }
 

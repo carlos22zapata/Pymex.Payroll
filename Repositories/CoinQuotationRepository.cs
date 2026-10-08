@@ -5,6 +5,7 @@ using Pymex.Payroll.Data.Contexts;
 using Pymex.Payroll.Data.Entities;
 using Pymex.Payroll.Data.Results;
 using Pymex.Payroll.Repositories.Interfaces;
+using Pymex.Shared.Time;
 using System.Globalization;
 
 namespace Pymex.Payroll.Repositories
@@ -200,7 +201,7 @@ namespace Pymex.Payroll.Repositories
                         {
                             await _context.CoinQuotations.AddAsync(new CoinQuotations
                             {
-                                Date = DateTime.Now,
+                                Date = AppClock.Now,
                                 Observation = "Cotización obtenida de la página del BCV",
                                 Origin = 2,
                                 CoinId = coin.Id,

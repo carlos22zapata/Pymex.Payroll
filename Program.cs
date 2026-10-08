@@ -50,11 +50,15 @@ builder.Services.AddCors(options =>
     });
 });
 
-builder.Services.AddControllers()
+builder.Services.AddControllers(o =>
+    {
+        o.ModelBinderProviders.Insert(0, new Pymex.Payroll.Infrastructure.AppClockModelBinderProvider());
+    })
     .AddJsonOptions(options =>
     {
         options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
         options.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
+        options.JsonSerializerOptions.Converters.Add(new Pymex.Shared.Time.JsonDateTimeConverter());
     });
 
 builder.Services.AddEndpointsApiExplorer();
